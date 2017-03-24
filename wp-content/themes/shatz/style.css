@@ -129,6 +129,10 @@ body.dfd-custom-padding-html #header-container #header {
   line-height: 20px;
 }
 
+.slick-slider .slick-dots {
+  margin-top: 30px;
+}
+
 .slick-slider .slick-dots li.slick-active .dfd-square-dots {
   background: #00B894;
   box-shadow: 0 0 0 2px #00B894;
@@ -136,6 +140,54 @@ body.dfd-custom-padding-html #header-container #header {
 
 .recent-works-item[style] {
   width: 49.99999% !important;
+}
+
+/*BUTTONS*/
+
+.no_padding .row {
+  width: 100%;
+}
+
+.no_padding .row .columns {
+  padding: 0;
+}
+
+.dfd-button-text-main {
+  background: #00B894;
+}
+
+.dfd-button-text-main:hover {
+  background: #2BD6B5;
+}
+
+.dfd-button-module-wrap .dfd-button-module.dfd-button-icon-right.dfd-button-icon-hover-simple .dfd-button-link .dfd-button-inner-cover .dfd-button-text-main i, .dfd-button-module-wrap .dfd-button-module.dfd-button-icon-right.dfd-button-icon-hover-simple .dfd-button-link .dfd-button-inner-cover .dfd-button-text-hover i, .dfd-button-module-wrap .dfd-button-module.dfd-button-icon-right.dfd-button-icon-hover-animate .dfd-button-link .dfd-button-inner-cover .dfd-button-text-main i, .dfd-button-module-wrap .dfd-button-module.dfd-button-icon-right.dfd-button-icon-hover-animate .dfd-button-link .dfd-button-inner-cover .dfd-button-text-hover i {
+  right: inherit !important;
+  padding-left: 5px;
+}
+
+/*TESTIMONIAL SLIDER*/
+
+.dfd-testimonials .icon-wrap {
+  display: none;
+}
+
+.dfd-testimonial-content {
+  font-size: 24px;
+  line-height: 34px;
+  color: #8A8A8A;
+  font-family: 'Merriweather', Georgia, serif !important;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dfd-testimonial-item .feature-title {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 13px;
+  list-style: 2px;
+  color: #8A8A8A;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 /*MOBILE SLIDE OUT*/
