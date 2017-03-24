@@ -1,0 +1,175 @@
+/*
+Theme Name:         Schatz
+Theme URI:          www.designbymilano.com
+Description:        Schatz - Based of ronneby
+Version:            1.0
+Author:             Ryan Milano
+Author URI:         www.designbymilano.com
+Tags:               light, white, one-column, two-columns, three-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, featured-images, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+
+License:            GPL v2
+License URI:        http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/*TYPOGRAPHY*/
+
+body {
+  font-family: 'Merriweather', Georgia, serif !important;
+}
+
+H1, H2, H3, H4, H5, H6 {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
+
+p {
+  font-family: 'Merriweather', Georgia, serif;
+  color: #8A8A8A;
+}
+
+.hero h1.widget-title {
+  color: #fff;
+  text-transform: uppercase !important;
+  font-size: 55px;
+  letter-spacing: 5px;
+}
+
+.hero p {
+  color: #fff;
+  font-style: italic;
+  font-size: 14px;
+  max-width: 490px;
+  margin: 0 auto;
+  line-height: 20px;
+}
+
+.hero .dfd-heading-delimiter {
+  display: none;
+}
+
+/*NAVIGATION*/
+
+.nav-menu .mega-menu-item .item-title {
+  font-size: 16px;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+#header-container.header-style-3:not(.small) #header .header-wrap .nav-menu .mega-menu-item .item-title, #header-container.header-style-3:not(.small) #header .header-wrap .nav-menu .menu-item-language-current > a, #header-container.header-style-3:not(.small) #header .header-wrap .total_cart_header.simple .woo-cart-contents .woo-cart-details, #header-container.header-style-3:not(.small) #header .header-wrap .lang-sel > a, #header-container.header-style-3:not(.small) #header .header-wrap .total_cart_header:not(:hover) .woo-cart-contents .woo-cart-items i, #header-container.header-style-3:not(.small) #header .header-wrap .form-search-wrap a {
+  color: #fff !important;
+}
+
+.nav-menu .mega-menu-item.menu-item-depth-0:before {
+  content: "//";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(0deg);
+    color: #fff;
+    font-size: 23px !important;
+}
+
+/*GLOBAL*/
+
+body.dfd-custom-padding-html {
+  margin: 0px;
+}
+
+body.dfd-custom-padding-html #header-container {
+  top: 0;
+}
+
+#header-container {
+  position: static;
+  height: 0px;
+}
+
+#header-container.header-style-3 #header .header-wrap > .row:last-child .header-main-panel .header-col-fluid #top_right_mega_menu, #header-container.header-style-4 #header .header-wrap > .row:last-child .header-main-panel .header-col-fluid #top_right_mega_menu {
+  padding-right: 0;
+}
+
+#header-container.header-style-3:not(.small) #header .header-wrap {
+  background: transparent;
+}
+
+body.dfd-custom-padding-html #header-container #header {
+  padding: 0px;
+}
+
+.logo-for-panel img {
+  margin-top: 20px;
+}
+
+.dfd-frame-line, #menu-fixer {
+  display: none !important;
+}
+
+.home-hero {
+  height:500px;
+}
+
+.home-hero .wpb_wrapper {
+  margin-top: 15%;
+}
+
+.bg_blue-texture {
+  background: url('http://localhost:8888/shatz/dev/wp-content/uploads/2017/03/bg_texture.png') top left repeat;
+}
+
+/*HOME PAGE*/
+
+.dfd-carousel-wrapper h5.widget-title {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+.slick-slider .slick-dots li.slick-active .dfd-square-dots {
+  background: #00B894;
+  box-shadow: 0 0 0 2px #00B894;
+}
+
+.recent-works-item[style] {
+  width: 49.99999% !important;
+}
+
+/*MOBILE SLIDE OUT*/
+
+.sidr {
+  background: #21227D;
+}
+
+.sidr .form-search-container .search-query, .sidr .searchsubmit-icon {
+  display: none !important;
+}
+
+.sidr ul li a:hover {
+  background-color: #010060;
+}
+
+
+/*BREAKPOINTS*/
+
+@media only screen and (max-width: 1100px) {
+
+  #header-container #header .header-wrap > .row:last-child .icon-mobile-menu span.icon-wrap {
+    background: #fff;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .featured-projects .row {
+    padding: 0 !important;
+  }
+
+  .recent-works-item[style] {
+    width: 100% !important;
+  }
+}
