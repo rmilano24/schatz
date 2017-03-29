@@ -167,11 +167,11 @@ body.dfd-custom-padding-html #header-container #header {
   background: url('http://localhost:8888/shatz/dev/wp-content/uploads/2017/03/bg_texture.png') top left repeat;
 }
 
-.block-blue-50 .wpb_wrapper {
+.block-blue-50 .wpb_wrapper, .block-white-50 .wpb_wrapper {
   padding: 15% 4%;
 }
 
-.block-blue-50 .wpb_wrapper .wpb_wrapper {
+.block-blue-50 .wpb_wrapper .wpb_wrapper, .block-white-50 .wpb_wrapper .wpb_wrapper {
   padding: 0;
 }
 
