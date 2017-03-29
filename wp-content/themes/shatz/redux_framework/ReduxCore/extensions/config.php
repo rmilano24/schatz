@@ -279,6 +279,13 @@
 				'default' => ''
 			),
 			array(
+				'id' => 'custom_google_api_key',
+				'type' => 'text',
+				'title' => __('Google Maps API Key', 'dfd'),
+				'desc' => __('You may add your generated Google Map API Key.', 'dfd'),
+				'default' => ''
+			),
+			array(
 				'id' => 'mobile_responsive',
 				'type' => 'button_set',
 				'title' => __('Mobile Responsive', 'dfd'),

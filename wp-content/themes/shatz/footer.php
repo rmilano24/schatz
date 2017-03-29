@@ -13,7 +13,7 @@ $dark_sub_footer_bg = (isset($dfd_ronneby['sub_footer_bg_dark']) && strcmp($dfd_
 <?php if($footer_style != '4') : ?>
 
 <div id="footer-wrap">
-	
+
 	<section id="footer" class="<?php echo esc_attr($footer_class); ?>">
 
 		<?php get_template_part('templates/footer/style', $footer_style); ?>
@@ -98,6 +98,7 @@ $dark_sub_footer_bg = (isset($dfd_ronneby['sub_footer_bg_dark']) && strcmp($dfd_
 //	require_once locate_template('inc/dfd_buttons.php'); //Custom style Panel
 //}
 ?>
+
 <?php wp_footer(); ?>
 </body>
 </html>
