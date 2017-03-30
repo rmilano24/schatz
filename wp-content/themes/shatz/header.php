@@ -42,7 +42,7 @@
 	<?php dfd_custom_page_style(); ?>
 
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i|Montserrat:300,400,500,700" rel="stylesheet">
-
+  <link rel="stylesheet" href="http://localhost:8888/shatz/dev/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=4.12">
 
     <?php wp_head(); ?>
 
