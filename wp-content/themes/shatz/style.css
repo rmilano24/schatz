@@ -365,6 +365,9 @@ body.dfd-custom-padding-html #header-container #header {
   margin-bottom: 50px;
 }
 
+/*CONTACT US*/
+
+
 
 /*CONTACT US*/
 
@@ -456,4 +459,23 @@ body.dfd-custom-padding-html #header-container #header {
   .recent-works-item[style] {
     width: 100% !important;
   }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .hero h1.widget-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+}
+
+
+@media only screen and (min-width: 540px) {
+
+  .dfd-team-member {
+    margin-bottom: 10  0px;
+  }
+
+
 }
