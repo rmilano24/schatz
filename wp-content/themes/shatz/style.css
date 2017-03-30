@@ -80,11 +80,11 @@ h3 {
   color: #fff !important;
 }
 
-.nav-menu .mega-menu-item.menu-item-depth-0:before {
+.nav-menu li::after {
   content: "//";
     display: block;
     position: absolute;
-    top: 1px;
+    top: -5px;
     left: -5px;
     -webkit-transform: rotate(45deg);
     transform: rotate(0deg);
@@ -92,16 +92,23 @@ h3 {
     font-size: 23px !important;
 }
 
-.nav-menu .mega-menu-item.menu-item-depth-0.current-menu-item:before, .nav-menu .mega-menu-item.menu-item-depth-0.current-menu-ancestor:before {
-  content: "//";
-    display: block;
-    position: absolute;
-    margin-top: -20.75px !important;
-    left: -5px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(0deg);
-    color: #fff;
-    font-size: 23px !important;
+.nav-menu li:first-child::after {
+  display: none;
+}
+
+.nav-menu li a {
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+#header-container.header-style-3:not(.small) #header .header-wrap .nav-menu .mega-menu-item.menu-item-depth-0.current-menu-item:before, #header-container.header-style-3:not(.small) #header .header-wrap .nav-menu .mega-menu-item.menu-item-depth-0.current-menu-ancestor:before {
+  background: none;
+  border: none;
+}
+
+#header-container.header-style-3:not(.small) #header .header-wrap .nav-menu .mega-menu-item:before, #header-container.header-style-3:not(.small) #header .header-wrap .nav-menu .mega-menu-item .item-title:after {
+  background: none !important;
+  border: none;
 }
 
 /*GLOBAL*/
