@@ -374,7 +374,7 @@ body.dfd-custom-padding-html #header-container #header {
   margin-bottom: 50px;
 }
 
-/*CONTACT US*/
+/*About US*/
 
 
 
@@ -384,7 +384,57 @@ body.dfd-custom-padding-html #header-container #header {
   font-family: 'Montserrat', Arial, sans-serif !important;
 }
 
+/*PORTFOLIO SINGLE*/
 
+.single #header-container {
+  height: 125px;
+  background: url('http://localhost:8888/shatz/dev/wp-content/uploads/2015/02/bg_hero.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+#layout.single-folio.folio_inside_1 .folio-info.desc-left:before, #layout.single-folio.folio_inside_1 .folio-info.desc-right:before {
+  background: url('http://localhost:8888/shatz/dev/wp-content/uploads/2017/03/bg_texture.png') top left repeat;
+}
+
+.single .box-name {
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
+
+.folio-info-field p {
+  color: #fff;
+}
+
+blockquote {
+  border-left: none;
+  color: transparent;
+  padding-left: 0px;
+}
+
+blockquote p {
+  font-size: 24px !important;
+  line-height: 34px;
+  color: #8A8A8A;
+  font-family: 'Merriweather', Georgia, serif !important;
+}
+
+.single .dfd-meta-container, .single-folio .folio-inside-add-info, .single .folio-add-info, .name .box-name, .folio-add-info {
+  display: none;
+}
+
+.single .name p {
+  font-size: 26px !important;
+  line-height: 34px;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
+
+.single .name p:after {
+  background: #fff !important;
+  height:4px !important;
+  width: 30px !important;
+}
 
 
 /*MOBILE SLIDE OUT*/

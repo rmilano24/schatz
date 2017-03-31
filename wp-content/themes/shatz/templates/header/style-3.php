@@ -27,11 +27,11 @@ $header_container_class .= (isset($dfd_ronneby['head_third_enable_buttons']) && 
 				<div class="row">
 					<div class="columns twelve header-info-panel">
 						<?php get_template_part('templates/header/block', 'topinfo'); ?>
-						
+
 						<?php if(isset($dfd_ronneby['header_third_login']) && $dfd_ronneby['header_third_login']) { ?>
 							<?php get_template_part('templates/header/block', 'login'); ?>
 						<?php } ?>
-						
+
 						<?php if(isset($dfd_ronneby['head_third_show_header_soc_icons']) && $dfd_ronneby['head_third_show_header_soc_icons']) { ?>
 							<div class="widget soc-icons <?php echo esc_attr($header_soc_icons_hover_style) ?>">
 								<?php echo crum_social_networks(true); ?>
@@ -70,13 +70,13 @@ $header_container_class .= (isset($dfd_ronneby['head_third_enable_buttons']) && 
 					<div class="header-col-fluid">
 						<?php get_template_part('templates/header/block', 'left_top_menu'); ?>
 						<?php get_template_part('templates/header/block', 'right_top_menu'); ?>
-						
+
 						<?php if(isset($dfd_ronneby['custom_logo_fixed_header']['url']) && $dfd_ronneby['custom_logo_fixed_header']['url']) : ?>
 							<a href="<?php echo home_url(); ?>/" title="<?php _e('Home', 'dfd') ?>" class="fixed-header-logo">
 								<img src="<?php echo esc_url($dfd_ronneby['custom_logo_fixed_header']['url']); ?>" alt="logo"/>
 							</a>
 						<?php endif; ?>
-						
+
 						<?php get_template_part('templates/header/block', 'custom_logo'); ?>
 					</div>
 				</div>

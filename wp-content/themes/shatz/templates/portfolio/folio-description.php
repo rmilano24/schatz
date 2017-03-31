@@ -30,14 +30,15 @@ if(!empty($fields)) {
 
 <div class="folio-info-field folio-info-field-inner eq-height columns <?php echo esc_attr($desc_columns); ?>">
 	<?php if(isset($dfd_ronneby['portfolio_inner_description_title']) && !empty($dfd_ronneby['portfolio_inner_description_title'])) : ?>
-		<div class="folio-field-name box-name"><?php echo $dfd_ronneby['portfolio_inner_description_title']; ?></div>
+		<!-- <div class="folio-field-name box-name"><?php echo $dfd_ronneby['portfolio_inner_description_title']; ?></div> -->
 	<?php endif; ?>
-	<?php 
+	<?php
 		while (have_posts()) {
 			the_post();
 			echo get_the_content();
 		}
 	?>
+	<hr>
 </div>
 
 <?php if((!isset($dfd_ronneby['entry_meta_display']) || $dfd_ronneby['entry_meta_display']) && (strcmp($description_position, 'left') !== 0 && strcmp($description_position, 'right') !== 0)) : ?>

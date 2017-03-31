@@ -24,7 +24,7 @@ $folio_single_enable_pagination = DfdMetaBoxSettings::compared('folio_single_ena
 ?>
 <section id="layout" class="single-folio <?php echo esc_attr($single_folio_class); ?>">
 
-	<?php 
+	<?php
 	if($folio_single_enable_pagination == 'on') {
 		$folio_single_pagination_style = DfdMetaBoxSettings::compared('folio_single_pagination_style', false);
 
@@ -69,7 +69,7 @@ $folio_single_enable_pagination = DfdMetaBoxSettings::compared('folio_single_ena
 
 </section>
 
-<?php 
+<?php
 switch ($gallery_type) {
 	case 'default':
 		?>

@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 get_template_part('templates/header/top', 'page'); ?>
 
 <section id="layout" class="portfolio-page dfd-sidebar-left dfd-equal-height-children">
-	
+
 	<?php get_template_part('templates/portfolio/template', 'top'); ?>
 
     <?php
@@ -73,7 +73,7 @@ get_template_part('templates/header/top', 'page'); ?>
                 }
 
                 $wp_query = new WP_Query($args);
-				
+
                 while (have_posts()) : the_post();
 
                     if (has_post_thumbnail()) {
@@ -83,7 +83,7 @@ get_template_part('templates/header/top', 'page'); ?>
 						$img_url = get_template_directory_uri() . '/img/no-image-large.jpg';
 					}
 					$article_image = dfd_aq_resize($img_url, 780, 780, true, true, true); //resize & crop img
-					
+
 					if(!$article_image) {
 						$article_image = $img_url;
 					}
@@ -91,9 +91,9 @@ get_template_part('templates/header/top', 'page'); ?>
 					$folio_video = false;
 
 					if (
-						get_post_meta($post->ID, 'folio_vimeo_video_url', true) || 
+						get_post_meta($post->ID, 'folio_vimeo_video_url', true) ||
 						get_post_meta($post->ID, 'folio_youtube_video_url', true) ||
-						(get_post_meta($post->ID, 'folio_self_hosted_mp4', true)!='') || 
+						(get_post_meta($post->ID, 'folio_self_hosted_mp4', true)!='') ||
 						(get_post_meta($post->ID, 'folio_self_hosted_webm', true)!='')
 					) {
 						$folio_video = true;
@@ -141,4 +141,3 @@ get_template_part('templates/header/top', 'page'); ?>
         </div>
     </div>
 </section>
-
