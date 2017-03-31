@@ -18,7 +18,7 @@ body {
   font-family: 'Merriweather', Georgia, serif !important;
 }
 
-H1, H2, H3, H4, H5, H6 {
+H1, H2, H3, H5, H6 {
   font-family: 'Montserrat', Arial, sans-serif !important;
 }
 
@@ -66,6 +66,15 @@ h3 {
   color: #fff !important;
   line-height: 26px !important;
 }
+
+h4 {
+  font-style: italic !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  max-width: 270px;
+  font-family: 'Merriweather', Georgia, serif !important;
+}
+
 
 /*NAVIGATION*/
 
@@ -206,7 +215,7 @@ body.dfd-custom-padding-html #header-container #header {
 
 #footer {
   background: #333;
-  padding: 40px 70px;
+  padding: 20px 20px !important;
 }
 
 #footer .eight img {
