@@ -197,7 +197,7 @@ body.dfd-custom-padding-html #header-container #header {
   padding-right: 10%
 }
 
-.block-blue-50 .uvc-heading-spacer {
+.block-blue-50 .uvc-heading-spacer, .block-white-50 .uvc-heading-spacer  {
   margin: 15px auto 20px auto;
 }
 
@@ -215,7 +215,7 @@ body.dfd-custom-padding-html #header-container #header {
 
 #footer {
   background: #333;
-  padding: 20px 20px !important;
+  padding: 20px 20px 10px 20px !important;
 }
 
 #footer .eight img {
@@ -227,6 +227,10 @@ body.dfd-custom-padding-html #header-container #header {
   padding:10px 0 0 0;
 }
 
+#footer .eight ul {
+  padding: 17px 0 0 0;
+}
+
 #footer .wpb_wrapper ul li {
   list-style-type: none;
   display: inline !important;
@@ -236,26 +240,28 @@ body.dfd-custom-padding-html #header-container #header {
   width: 83.66667%;
 }
 
-#footer .eight .wpb_wrapper ul li p {
-  padding-left: 5px;
+#footer .eight .wpb_wrapper ul li a {
+  padding: 0 10px;
   font-family: 'Montserrat', Arial, sans-serif !important;
   font-size: 14px !important;
+  color: #8A8A8A;
 }
 
 #footer .eight .wpb_wrapper ul li:after {
   content: "//";
-  display: block;
-  position: relative;
-  top: -21px;
-  left: -5px;
+  display: inline;
+  line-height: 0px;
 }
 
-#footer .eight .wpb_wrapper ul li:first-child:after {
+#footer .eight .wpb_wrapper ul li:last-child:after {
   content: "";
 }
 
-#footer .eight .wpb_wrapper ul li {
+
+#footer .eight .wpb_wrapper ul li, #footer .eight a[href^="mailto:"] {
   float: left;
+  line-height: 1px;
+  font-style: normal;
 }
 
 #footer .four {
@@ -349,6 +355,10 @@ body.dfd-custom-padding-html #header-container #header {
   padding-left: 5px;
 }
 
+.dfd-button-module-wrap .dfd-button-module .dfd-button-link .dfd-button-inner-cover .dfd-button-text-hover, .dfd-button-module-wrap .dfd-button-module .dfd-button-link .dfd-button-inner-cover .dfd-button-text-main {
+  padding-left: 25px;
+}
+
 /*TESTIMONIAL SLIDER*/
 
 .dfd-testimonials .icon-wrap {
@@ -377,12 +387,56 @@ body.dfd-custom-padding-html #header-container #header {
 /*About US*/
 
 
+.dfd-team-member {
+  margin-bottom: 40px !important;
+}
+
+/* OUR SERVICES */
+
+.page-id-14379 .block-blue-50 .wpb_wrapper, .page-id-14379 .block-white-50 .wpb_wrapper  {
+  padding: 35% 4%;
+  text-align: center;
+}
+
+.page-id-14379 .block-white-50 .wpb_wrapper {
+  border: 1px solid #26508C;
+}
+
+.page-id-14379 .block-white-50 .wpb_wrapper .wpb_wrapper {
+  border: none;
+}
+
+.page-id-14379 .block-blue-50 .wpb_wrapper h3, .page-id-14379 .block-white-50 .wpb_wrapper h3 {
+  text-align: center;
+}
+
+.page-id-14379 .block-blue-50 .wpb_wrapper p, .page-id-14379 .block-white-50 .wpb_wrapper p {
+  padding:0 10%;
+}
+
+.page-id-14379 .block-white-50 .wpb_wrapper h3 {
+  color: #333 !important;
+}
+
+.page-id-14379 .block-blue-50 .wpb_wrapper .wpb_wrapper, .page-id-14379 .block-white-50 .wpb_wrapper .wpb_wrapper  {
+  padding: 0%;
+}
+
 
 /*CONTACT US*/
 
 .wpcf7-submit {
   font-family: 'Montserrat', Arial, sans-serif !important;
 }
+
+
+/*PORTFOLIO*/
+
+.sort-panel, .works-list .entry-tags, .dfd-controler {
+  display: none !important;
+}
+
+
 
 /*PORTFOLIO SINGLE*/
 
@@ -487,6 +541,11 @@ blockquote p {
   width: 30px !important;
 }
 
+div.pp_overlay {
+  background: #333333 !important;
+  opacity: 0.9 !important;
+}
+
 
 /*MOBILE SLIDE OUT*/
 
@@ -546,8 +605,14 @@ blockquote p {
     float: none;
   }
 
-  #footer .eight .wpb_wrapper ul li {
+  #footer .eight .wpb_wrapper ul li, #footer .eight a[href^="mailto:"] {
     float: none;
+    display: block !important;
+    line-height: 40px;
+  }
+
+  #footer .eight .wpb_wrapper ul li:after {
+    content:"";
   }
 
   #footer .four {
@@ -558,6 +623,19 @@ blockquote p {
     float: none;
   }
 
+}
+
+
+@media only screen and (max-width: 980px) {
+
+  .dfd-testimonial-content {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 400px;
+  }
+  .dfd-carousel-wrapper .dfd-testimonials {
+    padding: 0 60px !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -578,14 +656,37 @@ blockquote p {
     line-height: 32px;
   }
 
+  .dfd-carousel-wrapper .dfd-testimonials {
+    padding: 0px !important;
+  }
+
+.dfd-testimonial-content {
+  padding: 0 50px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.dfd-testimonial-item .feature-title {
+  font-size: 11px;
+}
+
 }
 
 
-@media only screen and (min-width: 540px) {
+@media only screen and (max-width: 539px) {
 
   .dfd-team-member {
-    margin-bottom: 10  0px;
+    margin-bottom: 0px !important;
   }
 
+
+  .dfd-team-member.layout-02 .image-wrap {
+    float:none;
+    text-align: center;
+  }
+
+  .dfd-team-member.layout-02 .content-wrap {
+    text-align: center;
+  }
 
 }
