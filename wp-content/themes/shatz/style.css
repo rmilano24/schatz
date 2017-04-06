@@ -422,6 +422,20 @@ body.dfd-custom-padding-html #header-container #header {
   padding: 0%;
 }
 
+/*flexbox*/
+
+#layout .vc-row-wrapper:nth-child(odd) {
+  display: flex;
+}
+
+#layout .vc-row-wrapper:nth-child(odd) {
+  display: flex;
+}
+
+#layout .vc-row-wrapper:first-child {
+  border: none !important;
+}
+
 
 /*CONTACT US*/
 
