@@ -418,7 +418,58 @@ blockquote p {
   font-family: 'Merriweather', Georgia, serif !important;
 }
 
-.single .dfd-meta-container, .single-folio .folio-inside-add-info, .single .folio-add-info, .name .box-name, .folio-add-info {
+.single .dfd-meta-container, .single-folio .folio-inside-add-info, .single .folio-add-info, .name .box-name, .folio-add-info, .location .box-name, .testimonial .box-name {
+  display: none;
+}
+
+.desc-left h2 {
+  color: #ffffff !important;
+  font-weight: 400 !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 26px !important;
+  list-style: 3px;
+}
+
+.desc-left hr {
+  height: 4px !important;
+  width: 57px;
+  display: block !important;
+  border-bottom: 3px solid #fff;
+}
+
+.single-folio .folio-info .folio-info-field {
+  margin-bottom: 10px;
+}
+
+.services {
+  margin-top: 10px;
+}
+
+.desc-left li {
+  color: #fff;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.desc-left li::before {
+  content: "— ";
+}
+
+.testimonial blockquote {
+  margin-bottom: 20px !important;
+  margin-top: 50px !important;
+  max-width: 300px !important;
+}
+
+.testimonial blockquote p {
+  font-size: 26px !important;
+  line-height: 34px;
+  color: #fff;
+  font-family: 'Merriweather', Georgia, serif !important;
+  font-style: italic;
+}
+
+.testimonial blockquote::before {
   display: none;
 }
 
