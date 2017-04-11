@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 	global $dfd_ronneby;
 	$hover_subtitle_text = '';
-	
+
 	$custom_head_subtitle = DfdMetaBoxSettings::get('stunnig_headers_subtitle');
 
 	$thumb_data_attr = '';
@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	} else {
 		$img_url = get_template_directory_uri() . '/assets/images/no_image_resized_480-360.jpg';
 	}
-	
+
 	$_folio_id = get_the_ID();
-	
+
 	# Extract gallery images
 	$gallery_id = uniqid($_folio_id);
 
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	}
 
 	$attachments = array_filter(explode(',', $my_product_image_gallery));
-	
+
 	if(isset($dfd_ronneby['hover_subtitle_text']) && !empty($dfd_ronneby['hover_subtitle_text'])) {
 		$hover_subtitle_text = $dfd_ronneby['hover_subtitle_text'];
 	}
@@ -41,6 +41,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <div class="portfolio-entry-hover">
 	<div class="title-wrap">
 		<h6 class="widget-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+		<div class="uvc-heading-spacer line_only" style="height:4px;"><span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 4px; border-color: #ffffff; width: 55px; float: left;"></span></div>
+		<?php the_content(); ?>
+		<a class="quick-view" href="<?php the_permalink(); ?>">
+			<span class="quick-view-text" data-lang="en"><?php _e('Read More', 'dfd'); ?></span>
+		</a>
 		<?php if($hover_subtitle_text) { ?>
 			<div class="entry-tags">
 				<span class="folio-inner-subtitle subtitle">
@@ -56,9 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<a data-rel="prettyPhoto[<?php echo esc_attr($gallery_id); ?>]" class="zoom-post" href="<?php echo esc_url($img_url); ?>">
 		<i class="dfd-icon-zoom"></i>
 	</a>
-	<a data-rel="prettyPhoto[iframe]" class="quick-view" href="<?php the_permalink(); ?>?iframe=true&amp;width=100%25&amp;height=100%25">
-		<span class="quick-view-text chaffle" data-lang="en"><?php _e('Quick view', 'dfd'); ?></span>
-	</a>
+
 	<a class="open-post" href="<?php the_permalink(); ?>">
 		<i class="dfd-icon-link"></i>
 	</a>
@@ -86,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		if (strcmp($attachment_img_url, $img_url)===0) {
 			continue;
 		}
-		
+
 		$thumb_src = wp_get_attachment_image_src($attachment_id, 'thumbnail');
 		$thumb_data = '';
 		if (!empty($thumb_src[0])) {

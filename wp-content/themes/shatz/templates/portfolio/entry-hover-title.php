@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	} else {
 		$img_url = get_template_directory_uri() . '/img/no-image-large.jpg';
 	}
-	
+
 	$_folio_id = get_the_ID();
-	
+
 	# Extract gallery images
 	$gallery_id = uniqid($_folio_id);
 
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	}
 
 	$attachments = array_filter(explode(',', $my_product_image_gallery));
-	
+
 	$client_site = get_post_meta(get_the_ID(), 'folio_client_site', true);
 	if(empty($client_site)) {
 		$client_site = the_permalink();
