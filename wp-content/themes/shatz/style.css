@@ -742,6 +742,79 @@ div.pp_overlay {
   }
 }
 
+@media only screen and (max-width: 799px) {
+
+  .single .box-name {
+    color: #8A8A8A;
+    font-family: 'Montserrat', Arial, sans-serif !important;
+  }
+
+  .folio-info-field p {
+    color: #8A8A8A;
+  }
+
+  blockquote {
+    border-left: none;
+    color: transparent;
+    padding-left: 0px;
+  }
+
+  blockquote p {
+    font-size: 24px !important;
+    line-height: 34px;
+    color: #8A8A8A;
+    font-family: 'Merriweather', Georgia, serif !important;
+  }
+
+
+  .desc-left h2 {
+    color: #8A8A8A !important;
+    font-weight: 400 !important;
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-size: 26px !important;
+    list-style: 3px;
+  }
+
+  .desc-left hr {
+    height: 4px !important;
+    width: 57px;
+    display: block !important;
+    border-bottom: 3px solid #8A8A8A;
+  }
+
+  .single-folio .folio-info .folio-info-field {
+    margin-bottom: 10px;
+  }
+
+  .services {
+    margin-top: 10px;
+  }
+
+  .desc-left li {
+    color: #8A8A8A;
+    font-size: 16px;
+    list-style-type: none;
+  }
+
+  .desc-left li::before {
+    content: "— ";
+  }
+
+  .testimonial blockquote {
+    margin-bottom: 20px !important;
+    margin-top: 50px !important;
+    max-width: 300px !important;
+  }
+
+  .testimonial blockquote p {
+    font-size: 26px !important;
+    line-height: 34px;
+    color: #8A8A8A;
+    font-family: 'Merriweather', Georgia, serif !important;
+    font-style: italic;
+  }
+}
+
 @media only screen and (max-width: 640px) {
 
   .hero h1.widget-title {

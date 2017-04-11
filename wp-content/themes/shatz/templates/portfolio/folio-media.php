@@ -60,7 +60,7 @@ global $gallery_type;
 global $description_position;
 
 if ($attachments) {
-	
+
 	if (strcmp($gallery_type, 'default') === 0) {
 		echo '<div class="portfolio-inside-width-slider">';
 
@@ -69,24 +69,24 @@ if ($attachments) {
 			$image_src = wp_get_attachment_url($attachment_id, 'full'); // returns an array
 			$alt_text = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 			$meta_extra = get_post($attachment_id);
-			
+
 			$description = '';
 			if(isset($meta_extra->post_content) && $meta_extra->post_content != '')
 				$description .= $meta_extra->post_content;
 
 			$main_image = dfd_aq_resize($image_src, 1200, 750, true, true, true);
-			
+
 			if(!$main_image) {
 				$main_image = $image_src;
 			}
-			
+
 			$thumb_url = wp_get_attachment_image_src($attachment_id, 'thumbnail');
-				
+
 			$thumb_data_attr = '';
 			if(!empty($thumb_url[0])) {
 				$thumb_data_attr = 'data-thumb="'.esc_url($thumb_url[0]).'"';
 			}
-			
+
 			echo '<div class="main-slide">';
 				echo '<a href="'.esc_url($image_src).'" '.$thumb_data_attr.' data-rel="prettyPhoto[pp_gal]" title="'.esc_attr($description).'">';
 					echo '<img src="'.esc_url($main_image).'" alt="'.esc_attr($alt_text).'" />';
@@ -94,7 +94,7 @@ if ($attachments) {
 			echo '</div>';
 		}
 		echo '</div>';
-		
+
 		echo '<div class="portfolio-inside-thumbs-carousel">';
 		foreach ($attachments as $attachment_key=>$attachment_id) {
 			$image_src = wp_get_attachment_url($attachment_id, 'full'); // returns an array
@@ -103,7 +103,7 @@ if ($attachments) {
 			if(!$thumb_image) {
 				$thumb_image = $image_src;
 			}
-			
+
 			echo '<div class="thumb-slide">';
 				echo '<div class="thumb-cover">';
 					echo '<img src="'.esc_url($thumb_image).'" alt="" />';
@@ -121,10 +121,10 @@ if ($attachments) {
 
 			$image_attributes = wp_get_attachment_url($attachment_id);
 			$image_src = wp_get_attachment_url($attachment_id); // returns an array
-			
+
 			$alt_text = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 			$meta_extra = get_post($attachment_id);
-			
+
 			$description = '';
 			if(isset($meta_extra->post_content) && $meta_extra->post_content != '')
 				$description .= $meta_extra->post_content;
@@ -190,9 +190,9 @@ if ($attachments) {
 					$attachment_url = $image_src;
 				}
 			}
-			
+
 			$thumb_url = wp_get_attachment_image_src($attachment_id, 'thumbnail');
-				
+
 			$thumb_data_attr = '';
 			if(!empty($thumb_url[0])) {
 				$thumb_data_attr = 'data-thumb="'.esc_url($thumb_url[0]).'"';

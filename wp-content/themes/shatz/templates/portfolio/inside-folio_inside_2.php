@@ -27,7 +27,7 @@ foreach($options as $k => $v) {
 			</div>
 			<div class="dfd-blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 		<?php endif; ?>
-			
+
 		<?php if($options['folio_single_show_subtitle'] == 'on') :
 			$subtitle_text = get_post_meta(get_the_id(), 'stunnig_headers_subtitle', true);
 			if(!empty($subtitle_text)) {

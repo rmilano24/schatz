@@ -32,12 +32,12 @@ if(!empty($fields)) {
 	<?php if(isset($dfd_ronneby['portfolio_inner_description_title']) && !empty($dfd_ronneby['portfolio_inner_description_title'])) : ?>
 		<!-- <div class="folio-field-name box-name"><?php echo $dfd_ronneby['portfolio_inner_description_title']; ?></div> -->
 	<?php endif; ?>
-	<?php
+	<h2><?php
 		while (have_posts()) {
 			the_post();
-			echo get_the_content();
+			echo get_the_title();
 		}
-	?>
+	?></h2>
 	<hr>
 </div>
 
